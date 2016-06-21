@@ -16,6 +16,7 @@
 
 class Solution(object):
     # 60 ms
+    # hash table, o(n)
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
