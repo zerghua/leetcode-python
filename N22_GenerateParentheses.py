@@ -12,7 +12,7 @@
 
 """
 
-# 64 ms
+# 64 ms  8 / 8 test cases passed.
 # DFS on number of left and right parentheses
 class Solution(object):
     def dfs(self, ret, cur_str, left, right):
