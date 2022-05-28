@@ -75,6 +75,12 @@ class Solution(object):
         05/26/2022 16:48	Accepted	1616 ms	38.8 MB	python
         medium - hard 30-60 min. easy to think of sliding window, but very hard to come up with the
         correct code.
+
+        more thought on the next day:
+        while (ret < carpetLen), when carpet smaller than any one of the
+        tiles, we stop, the result will just be len(carpet).
+        each time we move to the start of next tile, calculate the complete
+        cover and partial cover, do an update. release previous tile.
         """
         tiles.sort(key=lambda x : x[0])
         left = right = cover = ret = 0
