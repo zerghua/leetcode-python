@@ -111,6 +111,15 @@ class Solution(object):
         hard.
         passing down direction is important, or robot will go indefinitely. why?
         dfs + backtracking, virtual coordinates.
+
+
+        thought: why do we need to maintain current direction?
+        because internally the robot is facing its current direction, but if we let it check a random direction,
+        it will be different.
+
+        e.g
+        if robot is going/facing right, and the robot.move() will check it's right/facing cell,
+        rather than it's upper(left hand) cell.
         """
         def dfs(r,c,d, visited):
             robot.clean()
